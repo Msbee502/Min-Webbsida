@@ -1,0 +1,107 @@
+/* fonts: 
+.sacramento-regular {
+    font-family: "Sacramento", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    .gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  } */
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: #fdf1ea;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-size: 15px;
+
+}
+header{
+    width: 100%;
+    height: 7vh;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right:20px;
+    display: flex;
+    justify-content:space-between;
+    gap: 50px;
+}
+a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+.first-container{
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.textAndLogo{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    
+}
+
+.img1 {
+    height: 80vh;
+    width: auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+}
+.headlineFirstPage{
+    font-family: "Gilda Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    color: #534f4f;
+}
+.h3Firstpage{
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 40px;
+    color: #353535;
+}
+
+.textSecondPage{
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #353535;
+}
+.btn {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 50px;
+}
