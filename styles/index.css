@@ -167,7 +167,7 @@ a {
     margin-left: 20px;
     margin-right: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: space-between;
     justify-content:center;
 }
@@ -180,8 +180,11 @@ a {
     color: #353535;
     margin-bottom: 15px;
     margin-top: 5px;
-    display: flex;
-    align-self: center;
+    text-align: center;
+}
+.priser {
+    max-width: 100%;
+    text-align: center;
 }
 h4{
     font-family: "Poppins", serif;
@@ -191,7 +194,7 @@ h4{
     color: #353535;
    
 }
-.textThirdPage {
+.textFirstPricetag, .textSecondPricetag, .textThirdPricetag {
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 20px;
@@ -220,3 +223,15 @@ h4{
     margin-top: 50px;
 }
 
+.firstPricetag{
+    height: auto;
+    max-width: 33%;
+}
+.secondPricetag{
+    height: auto;
+    max-width: 33%;
+}
+.thirdPricetag{
+    height: auto;
+    max-width: 33%;
+}
