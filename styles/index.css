@@ -161,11 +161,18 @@ a {
     font-size: 20px;
     margin-top: 25px;
 }
+.empty-container{
+    height: 5vh;
+    max-width: 100%;
+}
+
 .third-container {
     height: 100vh;
     max-width: 100%;
-    margin-left: 20px;
-    margin-right: 30px;
+    margin-left: 6vh;
+    margin-right: 3vh;
+    gap: 50px;
+    margin-top: 4vh;
     display: flex;
     flex-direction: row;
     align-items: space-between;
@@ -184,6 +191,7 @@ a {
 }
 .priser {
     max-width: 100%;
+    margin-top: 3vh;
     text-align: center;
 }
 h4{
@@ -234,4 +242,51 @@ h4{
 .thirdPricetag{
     height: auto;
     max-width: 33%;
+}
+.buy-small{
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.buy-medium {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.buy-vip {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 25px;
 }
