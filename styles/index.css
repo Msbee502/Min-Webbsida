@@ -183,10 +183,9 @@ a {
     gap: 50px;
     margin-top: 4vh;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
+    gap: 20px;
 }
 
 
@@ -202,12 +201,11 @@ h4{
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     color: #353535;
     margin-bottom: 15px;
     margin-top: 15px;
-    display: flex;
-    align-self: center;
+   
 }
 .textFirstPricetag {
     grid-column: 1;
