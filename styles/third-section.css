@@ -1,0 +1,171 @@
+
+.h3Priser {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 40px;
+    color: #353535;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+.third-container {
+    min-height: 100vh;
+    max-width: 100%;
+    margin-left: 6vh;
+    margin-right: 5vh;
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);    
+    row-gap: 9vh; 
+    column-gap: 10vh; 
+}
+
+h4{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 30px;
+    color: #353535;
+   
+}
+.textFirstPricetag, .textSecondPricetag, .textThirdPricetag, .kontaktformulär-ingår {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    width: 100%;
+    color: #353535;
+    margin-bottom: 15px;
+    margin-top: 15px;    
+   
+}
+.textFirstPricetag {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.firstMockup{
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+}
+.buy-small{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.textSecondPricetag {
+    grid-column: 2;
+    grid-row: 1;
+}
+.secondMockup {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.buy-medium{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+}
+.bold {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+}
+
+.textThirdPricetag {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.thirdMockup {
+    grid-column: 3;
+    grid-row: 2;
+}
+.buy-vip {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.firstMockup, .secondMockup, .thirdMockup{
+    align-items: center;
+    justify-content: center;
+}
+
+/* .btn {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-size: 20px;
+    align-items: flex-end;
+} */
+
+.firstPricetag{
+    height: auto;
+    
+}
+.secondPricetag{
+    height: auto;
+    
+}
+.thirdPricetag{
+    height: auto;
+    
+}
+.buy-small, .buy-vip {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 20px;    
+    
+}
+
+.buy-medium {
+    background-color: #fdf1ea;
+    border: 1px solid #0fb8ce;
+    color: #353535;
+    width: 175px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer{
+    height: 10vh;
+    max-width: 100%;
+    background-color: #fdf1ea;
+    text-align: center;
+}
+/* .empty {
+    grid-row: 4;
+    height: 10vh;
+    max-width: 100%;
+} */
