@@ -184,11 +184,9 @@ a {
     margin-top: 4vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    
-    gap: 20px;
+    grid-template-rows: repeat(3,1fr);    
+    row-gap: 9vh;  
 }
-
 
 h4{
     font-family: "Poppins", serif;
@@ -205,16 +203,19 @@ h4{
     width: 100%;
     color: #353535;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 15px;    
    
 }
 .textFirstPricetag {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 .firstMockup{
     grid-column: 1;
     grid-row: 2;
+    align-items: center;
 }
 .buy-small{
     grid-column: 1;
@@ -223,7 +224,7 @@ h4{
 
 .textSecondPricetag {
     grid-column: 2;
-    grid-row: 1/2;
+    grid-row: 1;
 }
 .secondMockup {
     grid-column: 2;
@@ -233,6 +234,13 @@ h4{
 .buy-medium{
     grid-column: 2;
     grid-row: 3;
+}
+.bold {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    font-size: 20px;
 }
 
 .textThirdPricetag {
@@ -249,8 +257,12 @@ h4{
     grid-row: 3;
 }
 
+.firstMockup, .secondMockup, .thirdMockup{
+    align-items: center;
+    justify-content: center;
+}
 
-.btn {
+/* .btn {
     background-color: #fdf1ea;
     border: 1px solid #0fb8ce;
     color: #353535;
@@ -263,8 +275,8 @@ h4{
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 20px;
-    margin-top: 50px;
-}
+    align-items: flex-end;
+} */
 
 .firstPricetag{
     height: auto;
@@ -282,7 +294,7 @@ h4{
     background-color: #fdf1ea;
     border: 1px solid #0fb8ce;
     color: #353535;
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-radius: 25px;
     padding: 10px 20px;
@@ -290,15 +302,15 @@ h4{
     transition: background-color 0.3s ease;
     font-family: "Poppins", serif;
     font-weight: 200;
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 20px;    
+    
 }
 
 .buy-medium {
     background-color: #fdf1ea;
     border: 1px solid #0fb8ce;
     color: #353535;
-    width: 200px;
+    width: 175px;
     height: 50px;
     border-radius: 25px;
     padding: 10px 20px;
@@ -307,14 +319,15 @@ h4{
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 20px;
-    margin-top: 25px;
+   
+    
 }
 
 .buy-vip {
     background-color: #fdf1ea;
     border: 1px solid #0fb8ce;
     color: #353535;
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-radius: 25px;
     padding: 10px 20px;
@@ -323,7 +336,7 @@ h4{
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 20px;
-    margin-top: 25px;
+    
 }
 
 footer{
@@ -333,3 +346,8 @@ footer{
     background-color: #fdf1ea;
     text-align: center;
 }
+/* .empty {
+    grid-row: 4;
+    height: 10vh;
+    max-width: 100%;
+} */
