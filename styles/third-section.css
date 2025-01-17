@@ -17,7 +17,7 @@
     margin-top: 4vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);    
+    grid-template-rows: auto auto auto;    
     row-gap: 9vh; 
     column-gap: 10vh; 
 }
@@ -46,6 +46,15 @@ h4{
     display: flex;
     justify-content: flex-start;
 }
+.firstMockup, .secondMockup, .thirdMockup {
+    width: 100%; 
+    height: auto;
+}
+.buy-small, .buy-medium, .buy-vip{
+    margin: 0 auto;
+
+}
+
 .firstMockup{
     grid-column: 1;
     grid-row: 2;

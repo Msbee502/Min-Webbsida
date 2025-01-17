@@ -1,0 +1,55 @@
+.parent-container{
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    max-width: 50%; /* Adjusted to fit flexbox container */
+    border: 1px solid #0fb8ce;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+input,
+textarea {
+  width: 90%; /* Make them responsive within the container */
+  max-width: 400px; 
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #0fb8ce;
+  border-radius: 5px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #353535;
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+}
+.textarea {
+  height: 200px;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+}
