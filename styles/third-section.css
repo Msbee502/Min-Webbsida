@@ -167,14 +167,24 @@ h4{
     font-size: 20px;
 }
 
-footer{
+.empty {
     height: 10vh;
+    max-width: 100%;
+}
+footer{
+    height: auto;
     max-width: 100%;
     background-color: #fdf1ea;
     text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
 }
-/* .empty {
-    grid-row: 4;
-    height: 10vh;
-    max-width: 100%;
-} */
+.contact {
+
+}
