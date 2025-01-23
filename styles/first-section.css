@@ -26,6 +26,39 @@ html, body{
 * {
     box-sizing: border-box;
 }
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0fb8ce;
+    color: #fdf1ea;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #cookie-banner button {
+    background-color: #fdf1ea;
+    color:#0fb8ce;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+  }
+
+  #cookie-banner button:hover {
+    background-color: #33302e;
+    color: #fdf1ea;
+    
+    
+  }
 header{
     width: 90%;
     height: 7vh;
@@ -43,6 +76,15 @@ a {
     font-family: "Poppins", serif;
     font-size: 20px;
     font-weight: 400;
+    display: inline-block; /* Säkerställer att transform fungerar korrekt */
+    transition: transform 0.5s ease; /* Gör rörelsen mjuk */
+    
+}
+a:hover{
+    color: #0fb8ce;
+}
+a:active{
+    transform: translateY(4px);
 }
 
 .logo {
@@ -104,4 +146,17 @@ a {
     font-weight: 400;
     font-size: 20px;
     margin-top: 50px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+
+.btn:hover {
+    background-color: #0fb8ce;
+    color: #fdf1ea;
+    
+}
+.btn:active {
+    background-color: #098899; /* Ännu mörkare grön */
+      transform: translateY(3px); /* Knappen ser ut att tryckas ner */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
 }

@@ -52,6 +52,7 @@ h4{
 }
 .buy-small, .buy-medium, .buy-vip{
     margin: 0 auto;
+    transition: all 0.2s ease;
 
 }
 
@@ -148,7 +149,8 @@ h4{
     transition: background-color 0.3s ease;
     font-family: "Poppins", serif;
     font-weight: 400;
-    font-size: 20px;    
+    font-size: 20px; 
+      
     
 }
 
@@ -187,4 +189,19 @@ footer{
 }
 .contact {
 
+}
+.buy-small, .buy-vip, .buy-medium {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.buy-small:hover, .buy-vip:hover, .buy-medium:hover {
+    background-color: #0fb8ce;
+    color: #fdf1ea;
+    ;
+}
+.buy-small:active, .buy-vip:active, .buy-medium:active {
+    background-color: #098899;
+      transform: translateY(3px); /* Knappen ser ut att tryckas ner */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
 }

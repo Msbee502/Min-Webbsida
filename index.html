@@ -3,14 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Bea's design" content="width=device-width, initial-scale=1.0 Webbsidor som hjälper ditt företag att växa. " >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="Bea's design" content="width=device-width, initial-scale=1.0" >
+    <meta name="title" content="Professionell Webbsidesdesign & Utveckling för Företag | Bea's Design">
+    <meta name="description" content="Bea's Design erbjuder modern och professionell webbsidesdesign för att hjälpa ditt företag att växa. Upptäck våra paket och boka ett möte idag.">
+    <meta name="keywords" content="webbsidesdesign, webbdesign, webbutveckling, företagssidor, professionell webbdesign, anpassade webbsidor, Bea's Design, hemsidor för företag">
+
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Professionell Webbsidesdesign & Utveckling för Företag | Bea's Design">
+    <meta property="og:description" content="Bea's Design hjälper ditt företag att växa med modern och professionell webbsidesdesign. Kontakta oss idag för att skapa en hemsida som fångar dina kunder.">
+    <meta property="og:image" content="./images/Logo.png">
+    <meta property="og:url" content="[URL till din webbsida]">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professionell Webbsidesdesign & Utveckling för Företag | Bea's Design">
+    <meta name="twitter:description" content="Bea's Design erbjuder skräddarsydda webbsidor för att hjälpa ditt företag växa. Kontakta oss idag för att få en professionell hemsida.">
+    <meta name="twitter:image" content="./images/Logo.png">    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -29,22 +42,31 @@
         <div> <img class="logo" alt="Logo" src="./images/Logo.png">
         </div>
         <div>
-            <a href="#priser">PRISER</a>
-            <a href="#kontakt">KONTAKT</a>
+            <a href="#priser" class="menuLink">PRISER</a>
+            <a href="#contact" class="menuLink">KONTAKT</a>
         </div>
     </header>
+    <!-- Cookie-banner -->
+    <div id="cookie-banner">
+        Vi använder cookies för att förbättra din upplevelse. Genom att fortsätta använda sidan godkänner du användningen av cookies.
+        <button id="accept-cookies">Jag förstår</button>
+      </div>
+      <a href="http://"></a>
+
     <div class="first-container">
 
         <div class="textAndLogo">
 
             <h1 class="headlineFirstPage"> Skapa intryck online. </h1>
             <h3 class="h3Firstpage">Webbsidor som hjälper ditt företag att växa. </h3>
-            <a href="./contact-form.html"><button class="btn" id="openFormBtn"> Boka möte </button></a>
+            <a href="./contact-form.html" class="btn" id="openFormBtn">Boka möte</a>
         </div>
         <div>
             <img class="img1" src="./images/bild-första-sidan.jpg" alt="Woman sitting infront of laptop">
         </div>
     </div>
+
+    <!-- Second section -->
     <div class="second-container">
         <img src="./images/bild-första-sidan.jpg" alt="Woman sitting infront of laptop" class="img2">
         <div class="text-container">
@@ -67,7 +89,7 @@
                 inte att kontakta mig direkt eller se vidare vilka paket vi erbjuder!
 
             </p>
-            <a href="./contact-form.html"><button class="btn-secondContainer" id="openFormBtn2" >Boka möte</button></a>
+           <a href="./contact-form.html" class="btn-secondContainer" id="openFormBtn2">Boka möte</a>
         </div>
     </div>
     <div class="empty-container"></div>
@@ -87,7 +109,7 @@
             class="firstMockup">
         <!-- <div class="empty"></div> -->
          
-        <a:link class="buy-small">Köp Small</a:link>
+        <a href="./contact-form.html" class="buy-small">Köp Small</a>
     
         <div class="secondPricetag">
             <h4> Webbsida Medium </h4>
@@ -100,7 +122,7 @@
         <img src="./images/Webbdesign-mockup.png" alt="Website mockup / Bild på webbsida på laptop och telefon"
             class="secondMockup">
         <!-- <div class="empty"></div> -->
-        <a:link class="buy-medium"> Köp medium</a:link>
+        <a href="./contact-form.html" class="buy-medium"> Köp medium</a>
 
         <div class="thirdPricetag">
             <h4> Webbsida VIP </h4>
@@ -112,13 +134,13 @@
         <img src="./images/Webbdesign-mockup.png" alt="Website mockup / Bild på webbsida på laptop och telefon"
             class="thirdMockup">
       
-        <a:link class="buy-vip"> Köp VIP </a:link>
+        <a href="./contact-form.html" class="buy-vip"> Köp VIP </a>
 
 
     </div>
       <div class="empty"></div>
     <footer>
-       <div class="contact"> 
+       <div class="contact" id="contact"> 
         <h3> Kontakt </h3>
         <p> Tel: 0707-361189</p>
         <p> Adress: Vemmentorp 502, 28692 Örkelljunga</p>
@@ -131,6 +153,7 @@
 
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

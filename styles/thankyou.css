@@ -1,0 +1,42 @@
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    color: #353535;
+}
+
+p {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    color: #555555;
+}
+
+a {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: #0fb8ce;
+    text-decoration: none;
+    margin-top: 20px;
+}
+button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+button.btn:hover {
+    background-color: #0fb8ce;
+    color: #fdf1ea;
+    ;
+}
+button.btn:active {
+    background-color: #098899; /* Ännu mörkare grön */
+      transform: translateY(3px); /* Knappen ser ut att tryckas ner */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
+}

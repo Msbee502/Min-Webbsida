@@ -59,8 +59,22 @@
     font-weight: 400;
     font-size: 20px;
     margin-top: 25px;
+    transition: all 0.2s ease;
 }
 .empty-container{
     height: 8vh;
     max-width: 100%;
+}
+.btn-secondContainer {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+.btn-secondContainer:hover {
+    background-color: #0fb8ce;
+    color: #fdf1ea;
+    
+}
+.btn-secondContainer:active {
+    background-color: #098899; 
+      transform: translateY(3px); /* Knappen ser ut att tryckas ner */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
 }

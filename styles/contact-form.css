@@ -53,3 +53,16 @@ input{
   padding: 10px;
   font-size: 16px;
 }
+button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+button.btn:hover {
+  background-color: #0fb8ce;
+  color: #fdf1ea;
+  ;
+}
+button.btn:active {
+  background-color: #098899; /* Ännu mörkare grön */
+    transform: translateY(3px); /* Knappen ser ut att tryckas ner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
+}
