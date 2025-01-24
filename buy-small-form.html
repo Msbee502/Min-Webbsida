@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/contact-form.css">
-    <link rel="stylesheet" href="styles/first-section.css">
+  
     <title>Contact Form</title>
 </head>
-
 <body>
+    
+    <div>
+        <p> <a href="./index.html">Tillbaka</a></p>
+    </div>
     <div class="parent-container" id="contact-form">
-
         <div id="formPopup" class="popup">
             <div class="popup-content">
-                <!-- <span class="close-btn" id="closeFormBtn">&times;</span> -->
-                <h2> Fyll i dina uppgifter</h2>
+                <h2>Fyll i dina uppgifter</h2>
                 <form action="https://formsubmit.co/b.hoogesteyn@gmail.com" method="POST">
-                    <input type="text" name="name" class="input" required placeholder="Namn">
-                    <input type="email" name="email" class="input" placeholder="E-mail">
-                    <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
-                    <input type="hidden" name="_template" value="box">
+                    <label class="label">
+                        <input type="checkbox" name="terms" checked required>
+                        <p>Köp webbsida small. Pris: 10000 SEK</p>
+                    </label>
+                    <input type="hidden" name="_subject" value="Ny kontaktförfrågan från din hemsida">
                     <input type="hidden" name="_captcha" value="false">
-                    <div class="checkbox-container">
-                        <label>
-                            <input type="checkbox" name="buy_website" value="Small" checked>
-                            Köp Small
-                        </label>
-                    </div>
-                    
-                    <textarea name="message" class="textarea" placeholder="Ditt meddelande"></textarea>
-                    <button type="submit" class="btn">Send</button>
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="thank-you.html"> <!-- Relativ länk till tack-sidan -->
+                    <input type="text" name="name" class="input" required placeholder="Namn">
+                    <input type="email" name="email" class="input" required placeholder="E-mail">
+                    <textarea name="message" class="textarea" required placeholder="Ditt meddelande"></textarea>
+                    <button type="submit" class="btn">Köp</button>
+                    <p>Jag bekräftar härmed mitt köp.</p>
                 </form>
+                
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>

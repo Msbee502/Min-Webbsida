@@ -1,68 +1,87 @@
-.parent-container{
-    height: 100vh;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdf1ea;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-size: 15px;
 }
+
+.parent-container {
+  height: 100vh; /* Full height for vertical centering */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100vw; /* Full viewport width */
+  padding: 0 20px; /* Optional: Prevent content from touching edges */
+  margin: 0 auto; /* Ensure it stays centered horizontally */
+}
+
 .popup {
-    max-width: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%; /* Allow it to use the full parent container width */
+  max-width: 600px; /* Set a reasonable max width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content inside the popup */
+  align-items: center;
 }
 
 .popup-content {
-    max-width: 50%; /* Adjusted to fit flexbox container */
-    border: 1px solid #0fb8ce;
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  width: 100%; /* Allow the content to stretch */
+  max-width: 400px; /* Limit content width */
+  border: 1px solid #0fb8ce;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack input fields vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 input,
 textarea {
-  width: 90%; /* Make them responsive within the container */
-  max-width: 400px; 
-  padding: 5px;
-  margin-bottom: 10px;
+  width: 100%; /* Stretch inputs to fit within the form */
+  max-width: 350px; /* Set a maximum width */
+  padding: 10px;
+  margin-bottom: 15px; /* Add spacing between inputs */
   border: 1px solid #0fb8ce;
   border-radius: 5px;
   font-family: "Poppins", serif;
-  font-weight: 400;
-}
-h2 {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-size: 30px;
-  color: #353535;
-}
-input{
-    padding: 10px;
-    font-size: 16px;
-}
-.textarea {
-  height: 200px;
-  resize: none;
-  padding: 10px;
   font-size: 16px;
 }
+
+textarea {
+  height: 150px; /* Set a fixed height for the textarea */
+  resize: none; /* Disable resizing */
+}
+
 button {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+  width: 150px;
+  height: 50px;
+  border: 1px solid #0fb8ce;
+  background-color: #fdf1ea;
+  color: #353535;
+  border-radius: 25px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Add spacing above the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-button.btn:hover {
+
+button:hover {
   background-color: #0fb8ce;
-  color: #fdf1ea;
-  ;
+  color: #fff;
 }
-button.btn:active {
-  background-color: #098899; /* Ännu mörkare grön */
-    transform: translateY(3px); /* Knappen ser ut att tryckas ner */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mindre skugga */
+
+h2 {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  color: #353535;
+  margin-bottom: 20px;
+  text-align: center;
 }
